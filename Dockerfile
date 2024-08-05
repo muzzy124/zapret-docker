@@ -6,6 +6,6 @@ RUN make
 
 FROM docker.io/alpine AS tpws
 COPY --from=build /src/zapret/tpws/tpws /usr/local/bin/
-RUN adduser -SH tpws
-USER tpws
+# RUN adduser -SH tpws
+# USER tpws
 ENTRYPOINT ["tpws"]
