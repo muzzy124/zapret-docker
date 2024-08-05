@@ -2,9 +2,9 @@ name: zapret
 services:
   tpws:
     build: .
-    command: ["--port=1080", "--socks", "--tlsrec=sni", "--disorder"]
+    command: ["--port=1089", "--tlsrec=sni", "--disorder"]
     ports:
-      - target: 1080
+      - target: 1089
         host_ip: 127.0.0.1
         published: ${PORT}
         protocol: tcp
